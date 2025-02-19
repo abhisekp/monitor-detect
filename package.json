@@ -1,0 +1,22 @@
+{
+  "name": "monitor-detect",
+  "version": "1.0.0",
+  "description": "Detect number of attached monitors",
+  "main": "monitor_detect.js",
+  "scripts": {
+    "build": "pkg -t node16-linux,node16-win --public -d --out-path dist/ monitor_detect.js",
+    "prebuild": "npm run clean",
+    "clean": "rimraf dist/"
+  },
+  "bin": {
+    "monitor_detect": "monitor_detect.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "rimraf": "^6.0.1",
+    "systeminformation": "^5.25.11"
+  }
+}
